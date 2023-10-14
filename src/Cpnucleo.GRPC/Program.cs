@@ -54,4 +54,6 @@ app.UseAuthorization();
 app.UseApplication();
 app.MapMagicOnionService();
 
+app.MapGet("/", () => "Cpnucleo GRPC it's up and ready to receive requests.");
+
 app.Run();
